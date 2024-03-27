@@ -13,18 +13,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/js/jquery-1.8.3.min.js" integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="./js/bootstrap.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
  
   
   <body style="background-color: #f3f3f2; " >
     
 
-
-    <nav style="background-color: white;" class="navbar navbar-expand-lg bg-body-tertiary " >
+    <style>
+      #logoo {
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        #logoo {
+        display: block;
+      }
+}
+      #logo2 {
+        display: block;
+      }
+      @media only screen and (max-width: 600px) {
+        #logo2 {
+        display: none;
+      }
+}
+    </style>
+    <nav style="background-color: white; padding: 0;" class="navbar navbar-expand-lg bg-body-tertiary " >
         <div class="container">
             
                
-            
+          <a id="logoo" href="#"><img style="max-width: 100%;    width: 100px;
+            " src="./img/Logo.svg" alt="">
+</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,27 +55,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul style="direction: rtl; font-size: x-large;" class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item" style="font-size: large;">
-                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">الرئيسية</a>
               </li>
-              <li class="nav-item dropdown" style="font-size: large;">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  البرامج السياحية
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">برامج الصيف </a></li>
-                  <li><a class="dropdown-item" href="#">برامج الشتاء</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">برامج اخرى</a></li>
-                </ul>
+              
+              <li class="nav-item" style="font-size: large;">
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#"> البرامج السياحية</a>
               </li>
               <li class="nav-item" style="font-size: large;">
-                <a class="nav-link active" aria-current="page" href="#">المقالات</a>
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">المقالات</a>
               </li>
               <li class="nav-item" style="font-size: large;">
-                <a class="nav-link active" aria-current="page" href="#">أراء العملاء</a>
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">أراء العملاء</a>
               </li>
               <li class="nav-item" style="font-size: large;">
-                <a class="nav-link active" aria-current="page" href="#">تواصل معنا</a>
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">تواصل معنا</a>
               </li>
              
               <form class="d-flex" role="search">
@@ -66,14 +80,16 @@
                 border-radius: 14px;" class="form-control " type="search" placeholder="بحث" aria-label="Search">
                 <!-- <button class="btn btn-outline-success" type="submit">بحث</button> -->
               </form>
-              <a style="display: inline-block;" href=""><img style="max-width: 100%; width: 50px; height: 30px; margin-right: 5px;" src="./img/arabic flag.png" alt=""></a>
-                <a style="display: inline-block;" href=""><img style="max-width: 100%; width: 50px; height: 30px;margin-right: 5px;" src="./img/english flag.png" alt=""></a>
+              <a style="display: inline-block;" href="#"><img style="max-width: 100%; width: 50px; height: 30px; margin-right: 5px;" src="./img/arabic flag.png" alt=""></a>
+                <a style="display: inline-block;" href="#"><img style="max-width: 100%; width: 50px; height: 30px;margin-right: 5px;" src="./img/english flag.png" alt=""></a>
              
             </ul>
-           
-            <img style="max-width: 100%;    width: 100px;
+           <!-- <a href="#"><img style="max-width: 100%;    width: 100px;
             " src="./img/Logo.svg" alt="">
-
+</a> -->
+<a id="logo2" href="#"><img style="max-width: 100%;    width: 100px;
+  " src="./img/Logo.svg" alt="">
+</a>
           </div>
         </div>
       </nav>
@@ -85,13 +101,21 @@
           <div class="col-lg-6 d-flex align-items-center">
             <div class="col">
               <h2 style="text-align:right;">
-                نحن خريطة رحلتك 
+                شركة رحلات بدر 
               </h2>
-              <p style="text-align:right;">
-                نعمل  سوياً كفريق عمل في شركة رحلات بدر على تقديم أفضل <br> خدمة سياحية لكافة عملائنا الكرام داخل دولة جورجيا  <br>
-                كما نمتاز بتقديم أفضل خدمات الدعم لكافة عملائنا الكرام من  <br>
-                قبل السفر إلى جورجيا لحين المغادرة من جورجيا 
-              </p>
+              <h1 style="text-align:right;">
+                نحن خريطة رحلتك 
+              </h1>
+              <h5 style="text-align:right; font-weight: 400;">
+                تأسست  شركة رحلات بدر سنة ٢٠١٩ لدى وزارة السياحة
+                <br> الجورجية و بيت العد الجورجي , نعمل معاً سوياً كفريق عمل شركة 
+                <br>
+                رحلات بدر على تقديم  خدمة سياحية لكافة عملائنا الكرام   
+                 <br>
+                 كما نمتاز بتقديم أفضل الخدمات السياحية لدى كافة العملاء من  
+                 <br>
+                كافة الدول العربية و الأجنبية 
+              </h5>
             </div>
             
           </div>
@@ -119,6 +143,21 @@
           </div>
         </div>
       </div>
+      <style>
+        @media only screen and (max-width: 600px) {
+          #backageshead{
+            max-width: fit-content;
+    margin-left: auto;
+    color: white;
+    padding: 21px;
+    padding-left: 106px;
+    font-size: 15px;
+          }
+}
+      </style>
+
+
+
 
      <div class="container">
 
@@ -130,93 +169,91 @@
                 <!-- <div class="image-wrapper">
                   <img src="./img/tbilisi.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                  
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="./img/batumi.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                  
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="./img/batumi.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                  
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="./img/borjomi.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                  
+                </div> -->
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="cards-wrapper">
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="./img/kutaisi.jpg" alt="...">
-                </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 <!-- <div class="image-wrapper">
                   <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
             </div>
           </div>
@@ -226,39 +263,39 @@
                 <!-- <div class="image-wrapper">
                   <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
                 </div> -->
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
               <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
                 
-                <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                   <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
                   <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
+                 
+                </div> -->
               </div>
             </div>
           </div>
@@ -284,92 +321,457 @@
   height: 25vw ;
   background-image: url(./img/batumi.jpg);
 }
-.card img {
-  /* border-top-left-radius: 30px; */
-  /* border-top-right-radius: 30px; */
-  border-radius: 30px;
-}
-.carousel-inner {
-  padding: 1em;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #e1e1e1;
-  width: 6vh;
-  height: 6vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-control-prev span,
-.carousel-control-next span {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.carousel-control-prev-icon {
-  background-image: url(./img/Icon_2.svg);
-  /* transform: translate(50%); */
-  transform: rotate(180deg);
-  background-size: 71px;
-  padding: 50px;
+          .card img {
+            /* border-top-left-radius: 30px; */
+            /* border-top-right-radius: 30px; */
+            border-radius: 30px;
+          }
+          .carousel-inner {
+            padding: 1em;
+          }
+          .carousel-control-prev,
+          .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .carousel-control-prev span,
+          .carousel-control-next span {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          .carousel-control-prev-icon {
+            background-image: url(./img/Icon_2.svg);
+            /* transform: translate(50%); */
+            transform: rotate(180deg);
+            background-size: 71px;
+            padding: 50px;
 
-}
-@media screen and (min-width: 577px) {
-  .cards-wrapper {
-    display: flex;
-  }
-  .card {
-    margin: 0 0.5em;
-    width: calc(100% / 4);
-  }
-  .cart {
-    margin: 0 0.5em;
-    /* width: calc(100% / 4); */
-  }
-  .image-wrapper {
-    height: 30vw ;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .card:not(:first-child) {
-    display: none;
-  }
-}
+          }
+          @media screen and (min-width: 577px) {
+            .cards-wrapper {
+              display: flex;
+            }
+            .card {
+              margin: 0 0.5em;
+              width: calc(100% / 4);
+            }
+            .cart {
+              margin: 0 0.5em;
+              /* width: calc(100% / 4); */
+            }
+            .image-wrapper {
+              height: 30vw ;
+              margin: 0 auto;
+            }
+          }
+          @media screen and (max-width: 576px) {
+            .card:not(:first-child) {
+              display: none;
+            }
+            .card {
+              
+              height: 105vw ;
+              
+            }
+          }
 
-.image-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  height: inherit;
-}
-.carousel-control-next-icon{
-  background-image: url(./img/Icon_2.svg);
-  background-size: 71px;
-  padding: 50px;
-}
-.carousel-control-prev, .carousel-control-next {
-  background: transparent;
-}
+          .image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            height: inherit;
+          }
+          .carousel-control-next-icon{
+            background-image: url(./img/Icon_2.svg);
+            background-size: 71px;
+            padding: 50px;
+          }
+          .carousel-control-prev, .carousel-control-next {
+            background: transparent;
+          }
         </style>
       
 
 
 
+        <style>
+            .crimage{
+    height: 168px;
+   
+    width: 400px;
+    border-radius: 30px;
+          
+}
 
-        <div class="container mt-5 ">
+              @media screen and (max-width: 576px) {
+
+            .crimage{
+              height: 168px;
+                width: 269px;
+                border-radius: 30px;
+            }
+            .carousel-wrapper{
+            width: 100%;
+            margin-left: -10px;
+            }
+            }
+          
+         
+        </style>
+        <div class="container " style="margin-top: 15rem;">
           <div class="row align-items-center" style="background-color: white; border-radius: 30px;">
-            <div class="col-lg-6 d-flex align-items-center">
-              <img style="max-width: 100%;" src="./img/Banner2.png" alt="">
-              
+            <div class="col-lg-9 d-flex align-items-center" >
+              <!-- <img style="max-width: 100%;" src="./img/Banner2.png" alt=""> -->
+              <div style="max-width: 100%; margin-top: -88px; margin-left: -47px;" class="section-wrapper" >
+                
+                <div  class="carousel-wrapper">
+                  <div class="carousel">
+                     <div class="carousel__card active" style="position: relative;">
+                      <img class="crimage"  alt="blog-image-3" src="./img/borjomi.jpg" />
+                     <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
+                     width: 100%;">
+                     <p style="text-align: center;">
+                      قصة حب تمثال على و نينو 
+                     </p>
+
+                     </div>
+                    </div>
+                    <!--.carousel__card-->
+                    <div class="carousel__card " style="position: relative;">
+                      <div>
+                        <img class="crimage" alt="blog-image-1" src="./img/batumi.jpg" />
+                         <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
+                     width: 100%;">
+                     <p style="text-align: center;">
+                      قصة حب تمثال على و نينو 
+                     </p>
+
+                     </div>
+                      </div>
+                     
+                    </div>
+                    <!--.carousel__card-->
+                    <div class="carousel__card " style="position: relative;">
+                      <div>
+                        <img class="crimage" alt="blog-image-2" src="./img/batumi.jpg" />
+                         <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
+                     width: 100%;">
+                     <p style="text-align: center;">
+                      قصة حب تمثال على و نينو 
+                     </p>
+
+                     </div>
+                      </div>
+                     
+                    </div>
+                    <!--.carousel__card-->
+                     <div class="carousel__card " style="position: relative;">
+                      <div>
+                        <img class="crimage" alt="blog-image-3" src="./img/batumi.jpg" />
+                         <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
+                     width: 100%;">
+                     <p style="text-align: center;">
+                      قصة حب تمثال على و نينو 
+                     </p>
+
+                     </div>
+                      </div>
+                      
+                    </div>
+                    <!--.carousel__card-->
+                    <div class="carousel__card " style="position: relative;">
+                      <div>
+                        <img class="crimage" alt="blog-image-3" src="./img/batumi.jpg" />
+                         <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
+                     width: 100%;">
+                     <p style="text-align: center;">
+                      قصة حب تمثال على و نينو 
+                     </p>
+
+                     </div>
+                      </div>
+                      
+                    </div>
+                    <!--.carousel__card-->
+                
+                    <div id="next" class="carousel__button--next"></div>
+                    <div id="prev" class="carousel__button--prev"></div>
+                
+                  </div>
+                  <!--.carousel-->
+                  <div class="carousel__dots">
+                    <ul id="dotList">
+                      <li class="dot active"></li>
+                      <li class="dot "></li>
+                      <li class="dot"></li>
+                      <li class="dot"></li>
+                      <li class="dot"></li>
+                    </ul>
+                  </div>
+                  <!--.carousel__dots-->
+                </div>
+                <div id="show"  class="col-lg-12  ms-4 " >
+                  <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">تصفح باقي المقالات </a>
+    
+                </div>
+                <!--.carousel-wrapper-->
+                </div>
+                <style>
+                  .section-wrapper {
+  /* background-color:#ebebeb; */
+  padding:30px;
+  padding-bottom: 11px;
+  /* margin-top:10rem; */
+}
+h3 {
+  /* font-size: 34px;
+  color: #525252;
+  text-align: center; */
+  
+  
+}
+.carousel-wrapper {
+  
+  overflow: hidden;
+  width: 90%;    
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+.carousel {
+    /* border: solid 3px rgba(0,0,0,.25); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carousel {
+  transform-style: preserve-3d;
+  overflow: hidden;
+
+}
+.carousel__card {
+  opacity: 0.4;
+}
+.carousel__card.active {
+  opacity: 1;
+}
+.carousel__card {
+  /* background-color: #fff; */
+  /* padding: 20px; */
+  margin-right: 10px;
+  /* border: #fff solid 5px; */
+  display: inline-block;
+  /* display: grid;
+  grid-template-columns: auto 150px;
+  grid-gap: 30px;
+  align-items: center; */
+}
+.carousel__card {
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+}
+.carousel__button--prev, .carousel__button--next {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #2eb57b;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;        
+}
+.carousel__button--prev {
+  left: 0;
+}
+.carousel__button--next {
+  right: 0;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+li.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 5px;
+}
+ul#dotList {
+  margin-top: 20px;
+  text-align: center;
+}
+li.dot.active {
+  background-color: #525252;
+}
+
+
+                </style>  
+                <script>
+                  /*variables */
+const itemClassName = "carousel__card";
+const nextbtn = document.getElementById("next");
+const prevbtn = document.getElementById("prev");
+const dots = document.querySelectorAll(".dot");
+
+let items = document.getElementsByClassName(itemClassName);
+let totalItems = items.length;
+let activeSlide = 0;
+let moving = false;
+let totalWidth = "";
+let singleAmountToMoveHorizontally = "";
+let positionX = "";
+let storeOldIndex = "";
+let differenceToMove = "";
+let amountOfTimesToLoopLeft = 0;
+let amountOfTimesToLoopRight = 0;
+
+/*functions*/
+function moveCardsHorizontally(amountToMove) {
+  for (let key in items) {
+    if (items.hasOwnProperty(key)) {
+      value = items[key];
+      //console.log(`items[${key}] = ${value}`);
+      items[key].style.transform = `translate(${amountToMove}px)`;
+    }
+  }
+}
+function getNewPosition(direction) {
+  totalWidth = items[0].parentElement.parentElement.parentElement.clientWidth; //1188  
+  singleAmountToMoveHorizontally = items[0].offsetWidth;  //422
+  console.log(
+    `singleAmountToMoveHorizontally = totalWidth:${totalWidth} / totalItems:${totalItems} = ${singleAmountToMoveHorizontally}`
+  );
+  if (direction === "right") {
+    console.log("parameter ->move right");
+    //We need to add one because the array index is 0 to n
+    positionX = Math.floor(singleAmountToMoveHorizontally * activeSlide + 1); //
+    console.log(
+      `positionX =  singleAmountToMoveHorizontally:${singleAmountToMoveHorizontally} * activeSlide:${
+        activeSlide + 1
+      } = ${positionX}`
+    );
+  } else if (direction === "left") {
+    console.log("parameter <- move left");
+    positionX = Math.floor(positionX - singleAmountToMoveHorizontally);
+    console.log(
+      `positionX = positionX - singleAmountToMoveHorizontally:${singleAmountToMoveHorizontally} = ${positionX}`
+    );
+  }
+  return positionX;
+}
+function disableInteraction() {
+  // Set 'moving' to true for the same duration as our transition.
+  // (0.5s = 500ms)
+  moving = true;
+  // setTimeout runs its function once after the given time
+  setTimeout(function () {
+    moving = false;
+  }, 500);
+}
+function toggleActiveClass(oldIndex, newIndex) {
+  //remove all active class
+  items[oldIndex].classList.remove("active");
+  dots[oldIndex].classList.remove("active");
+  //add active class to the one passed in by parameter
+  items[newIndex].classList.add("active");
+  dots[newIndex].classList.add("active");
+}
+function moveCardsDotsHorizontally(dir) {
+  moveCardsHorizontally(-getNewPosition(dir));
+  storeOldIndex = activeSlide;
+  console.log(`storeOldIndex= ${storeOldIndex}`);
+  if (dir === "left") {
+    activeSlide = activeSlide - 1;
+    console.log(`activeSlide - 1 = ${activeSlide}`);
+  } else {
+    activeSlide = activeSlide + 1;
+    console.log(`activeSlide + 1 = ${activeSlide}`);
+  }
+  toggleActiveClass(storeOldIndex, activeSlide);
+}
+
+function determineDifference(initial, final) {  
+  differenceToMove = Math.floor(final - initial);
+  console.log(`differenceToMove = final:${final} - initial:${initial} = ${differenceToMove}`);
+  return differenceToMove;
+}
+// Set event listeners
+nextbtn.onclick = function () {
+  // Check if carousel is moving, if not, allow interaction
+  if (!moving) {
+    console.log("next button clicked");
+    // temporarily disable interactivity
+    disableInteraction();
+    if (activeSlide === totalItems-1) {
+      console.log(
+        `active slide is activeSlide:${activeSlide} = totalItems:${totalItems} cant go more to the right`
+      );
+    } else {
+      moveCardsDotsHorizontally("right");
+    }
+  }
+};
+prevbtn.onclick = function () {
+  if (!moving) {
+    console.log("prev button clicked");
+    // temporarily disable interactivity
+    disableInteraction();
+    if (activeSlide === 0) {
+      console.log("active slide is 1 cant go more to the left");
+    } else {
+      moveCardsDotsHorizontally("left");
+    }
+  }
+};
+document.querySelectorAll(".dot").forEach((item, index) => {
+  item.addEventListener("click", (e) => {
+    console.log("clicked on dot");
+    //check what index was selected
+    console.log(`index:${index} and item:${item}`);
+    //get current slide and determine if the difference is greater or less than
+    if (index > activeSlide) {
+      console.log(`index:${index} > activeSlide:${activeSlide} move right`);      
+      amountOfTimesToLoopRight = Math.floor(determineDifference(index, activeSlide) * -1);
+      console.log(`amountOfTimesToLoopRight=${amountOfTimesToLoopRight}`);
+      for(var i=0;i<amountOfTimesToLoopRight;i++){
+        moveCardsDotsHorizontally("right");
+      }
+    } else {
+      console.log(`index:${index} < activeSlide:${activeSlide} move left`);
+      amountOfTimesToLoopLeft = determineDifference(index, activeSlide);  
+      console.log(`amountOfTimesToLoopLeft=${amountOfTimesToLoopLeft}`);    
+      for(var j=0;j<amountOfTimesToLoopLeft;j++){
+        moveCardsDotsHorizontally("left");
+      }      
+    }    
+  });
+});
+
+                </script>
             </div>
-            <div  class="col-lg-6  mt-5" >
-              <div style="" class="me-auto " >
-              <img style="max-width: 100%; position: absolute;max-width: 100%;
-              position: absolute;
-              width: 225px;
-              top: -50px;
-              right: 43px; " src="./img/newspaper.svg" alt="">
+            <div id="colmargin"  class="col-lg-3  " >
+              <div class="me-auto " >
+              <img id="paperabsolute"  src="./img/newspaper.svg" alt="">
               <div class="col-lg-12">
                 <h3 id="h3news" style="text-align: center; "  >
                   إقرأ أبرز المقالات 
@@ -385,17 +787,90 @@
               
             
             </div>
-            <div style="text-align: left;" class="col-lg-12  ">
-              <a style="height: fit-content; background-color: #2db378; border: none;" href="#" type="button" class="btn btn-primary ">تصفح باقي المقالات </a>
+           
+            </div>
+            <div id="hide"  class="col-lg-12  ">
+              <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">تصفح باقي المقالات </a>
 
             </div>
-            </div>
-            
           
           </div>
          
         </div>
-       
+        <style>
+          #colmargin{
+            margin-top: 8rem;
+
+          }
+          #paperabsolute
+          {
+            max-width: 100%; position: absolute;max-width: 100%;
+              position: absolute;
+              width: 225px;
+              top: -50px;
+              right: 43px; 
+          }
+          #hide{
+            display: none;
+          }
+          #show{
+            display: block;
+          }
+          @media only screen and (max-width: 600px) {
+            #hide{
+            display: block;
+          }
+          #show{
+            display: none;
+          }
+          #paperabsolute
+          {
+            width: 66px;
+    right: 14px;
+    top: -23px;
+          }
+          .carousel__card {
+  opacity: 1;
+}
+#colmargin{
+            margin-top: 0;
+
+          }
+}
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+        </style>
         <style>
           #h3news::after{
   content: "";
@@ -442,7 +917,7 @@ img {
 
   <div class="container">
     <div class="row d-flex align-items-center">
-      <div class="col-lg-6 ">
+      <div class="col-lg-7 " style="margin-top: 39px;">
         <h2 style="text-align: right;">
           فريق عمل بدر للرحلات 
         </h2>
@@ -451,9 +926,8 @@ img {
           أفضل خدمة سياحية لكافة العملاء الكرام .
         </p>
       </div>
-      <div class="col-lg-6 " style="text-align: right;">
-        <img class="img-fluid" src="./img/Girl.png" alt="" style="    height: 500px;
-        ">
+      <div class="col-lg-5 " style="text-align: center;">
+        <img class="img-fluid" src="./img/Girl.png" alt="" >
       </div>
     </div>
   </div>
@@ -463,11 +937,11 @@ img {
   padding-bottom: 0px;">
    <div class="row" style="text-align: right;">
      <div style="text-align: right;" >
-       <h3 style="max-width: fit-content; margin-right: auto;    color: white;
-       padding: 20px;    padding-left: 180px;    padding-bottom: 24px;
-
- " id="backageshead">شاهد أراء عملائنا من كافة الدول 
-       </h3>
+      <h3 style="max-width: fit-content; margin-right: auto;    color: white;
+      padding: 21px;    padding-left: 157px;
+" id="backageshead">
+        شاهد أراء عملائنا من كافة الدول 
+      </h3>
      </div>
    </div>
  </div>
@@ -524,7 +998,7 @@ img {
                               </div>
                             </div>
                             
-                            <div style="position: absolute;     bottom: 23%;right: 0; color: white; border-radius: 30px; border-top: 0; 
+                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
  width: 100%;" class="card-body">
                                 <div style="text-align: center;" class="lc-block mb-3">
                                     <div editable="rich">
@@ -546,7 +1020,7 @@ img {
 
                                 <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
                             </div>
-                            <div style="position: absolute;     bottom: 23%;right: 0; color: white; border-radius: 30px; border-top: 0; 
+                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
                             width: 100%;" class="card-body">
                                                            <div style="text-align: center;" class="lc-block mb-3">
                                                                <div editable="rich">
@@ -569,7 +1043,7 @@ img {
                             <div class="lc-block">
                                 <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
                             </div>
-                            <div style="position: absolute;     bottom: 23%;right: 0; color: white; border-radius: 30px; border-top: 0; 
+                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
                             width: 100%;" class="card-body">
                                                            <div style="text-align: center;" class="lc-block mb-3">
                                                                <div editable="rich">
@@ -591,7 +1065,7 @@ img {
                             <div class="lc-block">
                                 <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Cherry Lin" loading="lazy">
                             </div>
-                            <div style="position: absolute;     bottom: 23%;right: 0; color: white; border-radius: 30px; border-top: 0; 
+                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
                             width: 100%;" class="card-body">
                                                            <div style="text-align: center;" class="lc-block mb-3">
                                                                <div editable="rich">
@@ -609,7 +1083,7 @@ img {
                 </div>
                 <div class="swiper-slide h-100">
                     <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                             <div class="lc-block">
                                 <img class="img-fluid" src="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Grant Durr" loading="lazy">
@@ -634,7 +1108,7 @@ img {
                 </div>
                 <div class="swiper-slide h-100">
                     <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                             <div class="lc-block">
                                 <img class="img-fluid" src="https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by willy wo" loading="lazy">
@@ -655,7 +1129,7 @@ img {
                 </div>
                 <div class="swiper-slide h-100">
                     <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background: linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(11,16,12,1) 63%, rgba(5,19,20,1) 100%, rgba(4,22,24,1) 100%);
+                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
  width: 100%;" class="card-body">
                             <div class="lc-block">
                                 <img class="img-fluid" src="https://images.unsplash.com/photo-1587117238257-8cacadca6ae4?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1587117238257-8cacadca6ae4?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Dayana Brooke" loading="lazy">
@@ -706,42 +1180,66 @@ img {
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <h3 style="background-image: url(./img/Icon_4.svg); background-repeat: no-repeat;background-size: cover;padding: 23px;  text-align: center; color: #f3f3f2;">
-        حجوزات الفنادق و الإقامة 
-      </h3>
+      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
+        <h3 style="padding-top: 18px;
+    padding-bottom: 21px;
+    /* background-size: cover; */
+    /* padding: 23px; */
+    text-align: center;
+    color: #f3f3f2;">
+         خدمات الدعم و المساعدة 
+        </h3>
+      </div>
+     
       <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid laboriosam tempore reiciendisdit fuga magnam et? Velit.
+        نوفر لعملائنا خدمات الدعم على مدار الساعة طوال الاسبوع للرد على كافة الإستفسارات و مساعدتهم في حالات الطوارئ .
         <br><br>
         <span id="h3font">
-          توفير معلومات مفصلة حول كل خيار , بما في ذلك الخدمات المتاحة و المرافق و التقييمات ن العملاء السابقين 
+          توفير معلومات مفصلة حول التأشيرة و المتطلبات الصحية و الأمنية للوجهات السياحية المختلفة .
         </span>
         
       </h4>
 
     </div>
     <div class="col-lg-4">
-      <h3 style="background-image: url(./img/Icon_4.svg); background-repeat: no-repeat;background-size: cover; padding: 23px;  text-align: center; color: #f3f3f2;">
-       جولات سياحية و نشاطات 
-      </h3>
+      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
+        <h3 style="padding-top: 18px;
+    padding-bottom: 21px;
+    /* background-size: cover; */
+    /* padding: 23px; */
+    text-align: center;
+    color: #f3f3f2;">
+          جولات سياحية و نشاطات 
+        </h3>
+      </div>
+     
       <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
-        تنظيم الجولات السياحية محلية ودولية , بما في ذلك الجولات السياحية الثقافية , و المغامرات الطبيعية , و الرحلات البحرية , و رحلات السفاري .
+        تنظيم جولات سياحية محلية ودولية , بما في ذلك الجولات السياحية الثقافية , العائلة , الشبابية , العلاجية , و رحلات السفاري  .
         <br>
         <br>
         <span id="h3font">
-          ترتيب أنشطة ترفيهية مختلفة , مثل ركوب الدراجات , و الغوص , و ركوب الخيل , و الغوص , و التجديف , و التزلج.
+          ترتيب أنشطة ترفيهية مختلفة , مثل ركوب الدراجات النارية , و ركوب الخيل  , التجديف , و التزلج على الجليد , و أكثر من ذلك .
         </span>
         
       </h4>
     </div>
     <div class="col-lg-4">
-      <h3 style="background-image: url(./img/Icon_4.svg); background-repeat: no-repeat;background-size: cover;  padding: 23px;  text-align: center; color: #f3f3f2;">
-        حجوزات الفنادق و الإقامة 
-      </h3>
+      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
+        <h3 style="padding-top: 18px;
+    padding-bottom: 21px;
+    /* background-size: cover; */
+    /* padding: 23px; */
+    text-align: center;
+    color: #f3f3f2;">
+          حجوزات الفنادق و الإقامة 
+        </h3>
+      </div>
+      
       <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
-        تقديم مجموعة واسعة من الخيارات للإقامة . بما في ذلك الفنادق و المنتجعات و الشقق الفندقية, و المبيت , و الإفطار , و منازل العطلات .
+        نقدم  مجموعة واسعة من الخيارات للإقامة . بما في ذلك فنادق , منتجعات , أكواخ , شقق فندقية  شاملة الإفطار .
         <br><br>
         <span id="h3font">
-          توفير معلومات مفصلة حول كل خيار , بما في ذلك الخدمات المتاحة و المرافق و التقييمات ن العملاء السابقين 
+          توفير كافة المعلومات المفصلة  حول كل خيار , بما في ذلك الخدمات المتاحة و المرافق و التقييمات ن العملاء السابقين .
         </span>
         
       </h4>
@@ -789,31 +1287,31 @@ function countIni() {
 
 countIni();
 </script>
-  <div class="container mb-3 mt-3">
-    <div class="row">
-      <div class="col-lg-9 d-flex align-items-center" style="background-image: url(./img/Icon_9.png); background-repeat: no-repeat; background-size:100% 100%   ;
+  <div class="container mb-3 mt-3 ">
+    <div class="row d-flex justify-content-between">
+      <div class="col-lg-9 d-flex align-items-center" style="background-image: url(./img/Icon_9.png); background-repeat: no-repeat; background-size:99% 100%   ;
       border-radius: 30px;">
         <div class="col-lg-3" style="text-align: center;">
           <img src="./img/Support.svg" style="max-width: 100%; width: 100px;" alt="">
-          <p>
+          <p style="color: white;">
             خدمة دعم 24/7
           </p>
         </div>
         <div class="col-lg-3" style="text-align: center;">
           <img src="./img/Safe.svg" style="max-width: 100%; width: 100px;" alt="">
-          <p>
+          <p style="color: white;">
             رحلات أمنة
           </p>
         </div>
         <div class="col-lg-3" style="text-align: center;">
           <img src="./img/Star.svg" style="max-width: 100%; width: 100px;" alt="">
-          <p>
+          <p style="color: white;">
             فنادق مميزة
           </p>
         </div>
         <div class="col-lg-3" style="text-align: center;">
           <img src="./img/Car.svg" style="max-width: 100%; width: 100px;" alt="">
-          <p>
+          <p style="color: white;">
             سيارة خاصة 
           </p>
         </div>
@@ -829,8 +1327,11 @@ countIni();
         
       </style>
 
-      <div class="col-lg-3">
-        <h3 id="h3count" style="text-align: center; background-image: url(./img/Icon_10.png); background-repeat: no-repeat; background-size: contain ;padding: 20px; ">
+      <div class="col-lg-3" style="background-image: url(./img/Icon_10.png); background-repeat: no-repeat; background-size: contain ;padding: 20px;">
+        <h3 id="h3count" style="text-align: center;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;  ">
           <span id="number">9,671</span> K  
           <br>
           <span style="font-size: large;">
@@ -843,7 +1344,7 @@ countIni();
 
   <div class="container">
     <div class="row">
-      <div style="position: relative; background-color: #2db378; border-radius: 30px; text-align: right; padding-right: 32px; padding: 20px;" class="col-lg-6">
+      <div id="emailsection" style="" class="col-lg-6">
         <h1 style="color: white;">
           سجل إيميلك 
         </h1>
@@ -868,11 +1369,33 @@ countIni();
 
         </div>
         <button type="button" class="btn btn-warning"  style="font-weight: 700;background-color: #f1d450;">إضغط للتسجيل </button>
-        <img src="./img/Email.svg" style="position: absolute;
+        <img id="emailimg" src="./img/Email.svg" style="" alt="">
+      </div>
+      <style>
+       
+        #emailimg{
+          position: absolute;
         width: 650px;
     bottom: -38%;
-    left: -21%;" alt="">
-      </div>
+    left: -21%;
+                  }
+                  #emailsection{
+                    position: relative; background-color: #2db378; border-radius: 30px; text-align: right; padding-right: 32px; padding: 20px;
+                  }
+        @media only screen and (max-width: 600px) {
+                  #emailimg{
+                    position: absolute;
+    width: 205px;
+    bottom: -7%;
+    left: 0%;
+                  }
+                  
+                  #emailsection{
+                    padding-bottom: 98px;
+    margin-bottom: 41px;
+        }
+                  }
+      </style>
       <div class="col-lg-3 ">
         
         <div class="col-lg-12" style="background-color: #00111b; border-radius: 30px; padding: 20px; color: white; margin-bottom: 12px;">
@@ -901,7 +1424,7 @@ countIni();
           </p>
           <p style="margin: 0;">
             9:00AM - 05:00PM
-
+<br><br>
           </p>
           
         </div>
@@ -915,7 +1438,9 @@ countIni();
           </h5>
           <p style="margin: 0; text-align: right;">
             منطقة سابورتالو بجوار مدخل المستشفي
+            
             الجمهوري، تبليسي، جورجي
+            <br><br>
           </p>
          
         </div>
@@ -940,9 +1465,9 @@ countIni();
     <img style="max-width: 100%;" src="./img/Stamps.png" alt="">
   </div>
   
-    <footer style=" color: black;" class="bg-body-tertiary text-center">
+    <footer style=" color: black;background: url(./img/footer.jpg); background-repeat: no-repeat; background-size: cover;" class="bg-body-tertiary text-center">
       
-        <div class="container-fluid text-center  " style="  color: white; padding-top: 20px;  margin-top: 0 !important;background-color: #00111b; background-repeat: no-repeat;
+        <div class="container-fluid text-center  " style="  color: white; padding-top: 20px;  margin-top: 0 !important;
         ">
             <div style="margin: auto;" class="row d-flex justify-content-around">
               <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
@@ -1065,15 +1590,17 @@ countIni();
               <!-- Grid column -->
             </div>
             <!-- Grid row -->
+            <p style="padding-bottom: 10px;
+            margin: 0;">
+              © 2024 Copyright: <a href="https://codecraftin.com/">CodeCraftin</a>
+            </p>
           </div>
         <!-- Grid container -->
        
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2024 Copyright: <a href="https://codecraftin.com/">CodeCraftin</a>
-        </div>
+       
         
       </footer>
       
