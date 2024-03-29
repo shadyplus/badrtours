@@ -13,7 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/js/jquery-1.8.3.min.js" integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="./js/bootstrap.js"></script> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
   </head>
  
@@ -39,21 +41,17 @@
       }
 }
     </style>
-    <nav style="background-color: white; padding: 0;" class="navbar navbar-expand-lg bg-body-tertiary " >
-        <div class="container">
-            
-               
-          <a id="logoo" href="#"><img style="max-width: 100%;    width: 100px;
+    
+      <nav style="background-color: white;  padding: 0;"  class="navbar navbar-expand-lg navbar-light ">
+        <div  class="container">
+          <a class="navbar-brand" href="#"><img style="max-width: 100%;    width: 100px;
             " src="./img/Logo.svg" alt="">
-</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          </a></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-         
-          
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul style="direction: rtl; font-size: x-large;" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
               <li class="nav-item" style="font-size: large;">
                 <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">Home</a>
               </li>
@@ -65,31 +63,21 @@
                 <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">Blogs</a>
               </li>
               <li class="nav-item" style="font-size: large;">
-                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">Feedback</a>
+                <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#Feedback">Feedback</a>
               </li>
               <li class="nav-item" style="font-size: large;">
                 <a class="nav-link active" style="font-weight: 500;" aria-current="page" href="#">Contact Us</a>
               </li>
-             
-              <form class="d-flex" role="search">
-                
-                <input style="text-align: right;text-align: right;border: #049504 2px solid;max-width: 100%;
-                width: 300px;
-                height: max-content;
-
-                border-radius: 14px;" class="form-control " type="search" placeholder="search" aria-label="Search">
-                <!-- <button class="btn btn-outline-success" type="submit">بحث</button> -->
-              </form>
-              <a style="display: inline-block;" href="./index.html"><img style="max-width: 100%; width: 50px; height: 30px; margin-right: 5px;" src="./img/arabic flag.png" alt=""></a>
-                <a style="display: inline-block;" href="#"><img style="max-width: 100%; width: 50px; height: 30px;margin-right: 5px;" src="./img/english flag.png" alt=""></a>
-             
             </ul>
-           <!-- <a href="#"><img style="max-width: 100%;    width: 100px;
-            " src="./img/Logo.svg" alt="">
-</a> -->
-<a id="logo2" href="#"><img style="max-width: 100%;    width: 100px;
-  " src="./img/Logo.svg" alt="">
-</a>
+            <form class="d-flex">
+              <input style="text-align: left;border-radius: 14px;border: #049504 2px solid;max-width: 100%;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+            <div class="d-flex  ">
+              <a style="display: inline-block;" href="./index.html"><img style="max-width: 100%; width: 50px; height: 30px; margin-right: 5px;" src="./img/arabic flag.png" alt=""></a>
+              <a style="display: inline-block;" href="#"><img style="max-width: 100%; width: 50px; height: 30px;margin-right: 5px;" src="./img/english flag.png" alt=""></a>
+            </div>
+           
           </div>
         </div>
       </nav>
@@ -122,6 +110,7 @@
           
         </div>
       </div>
+      
 
       <style>
         #backageshead{
@@ -130,21 +119,132 @@
           background-repeat: no-repeat;
     background-size: cover;
         }
+        #spans{
+          max-width: fit-content; margin-left: auto;    color: white;
+            padding: 20px;   text-align: right;background-image: url(./img/Text_Bar.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;   font-size: 30px;  
+        }
+        @media only screen and (max-width: 600px) {
+          #spans{
+           font-size: large;  
+           padding: 64px;
+        }
+}
       </style>
 
       <div class="container">
         <div class="row" style="text-align: right;">
-          <div style="text-align: right;" >
-            <h3 style="max-width: fit-content; margin-left: auto;    color: white;
-            padding: 21px;    padding-left: 157px;
-" id="backageshead">
+          <div style="text-align: left; margin-top: 30px; margin-bottom: 30px;" >
+            <span id="spans1" >
              Browse Our best offers and packages
-            </h3>
+            </span>
           </div>
         </div>
       </div>
+<!-- test -->
+<!-- <div class="container">
+  <div class="row" style="overflow: hidden;">
+    <div class="swiper-container slider2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Item 1</div>
+        <div class="swiper-slide">Item 2</div>
+        <div class="swiper-slide">Item 3</div>
+        <div class="swiper-slide">Item 4</div>
+        <div class="swiper-slide">Item 5</div>
+        <div class="swiper-slide">Item 6</div>
+      </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> 
+  </div>
+</div> -->
+<style>
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Slider 1
+    var slider1 = new Swiper('.slider1', {
+      slidesPerView: 1, // Show only one slide
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.slider1 .swiper-button-next',
+        prevEl: '.slider1 .swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+      slideToClickedSlide: true,
+      touch: true,
+      breakpoints: {
+        // When window width is greater than 576px
+        576: {
+          slidesPerView: 4, // Show four slides
+        },
+      },
+    });
+
+    // Initialize Slider 2
+    var slider2 = new Swiper('.slider2', {
+      slidesPerView: 1, // Show only one slide
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.slider2 .swiper-button-next',
+        prevEl: '.slider2 .swiper-button-prev',
+      },
+      autoplay: {
+        delay: 3000,
+      },
+      slideToClickedSlide: true,
+      touch: true,
+      breakpoints: {
+        // When window width is greater than 576px
+        576: {
+          slidesPerView: 4, // Show four slides
+        },
+      },
+    });
+  });
+</script>
+<!-- test -->
+
+
+
+
+
+
       <style>
+        #spans1{
+          max-width: fit-content; margin-left: auto;    color: white;
+            padding: 20px;   text-align: right;background-image: url(./img/Text_Bar.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;   font-size: 30px;  
+        }
         @media only screen and (max-width: 600px) {
+          #spans1{
+            font-size: 18px;
+            padding: 22px;
+        }
           #backageshead{
             max-width: fit-content;
     margin-left: auto;
@@ -155,161 +255,72 @@
           }
 }
       </style>
+  
+      
 
 
+<div class="container">
+  <div class="row" style="overflow: hidden;">
+     <!-- Slider 1 -->
+<div class="swiper-container slider1">
+<div id="sww" class="swiper-wrapper">
+<div id="ss" class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+<div class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+<div class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+<div class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+<div class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+<div class="swiper-slide"><img src="./img/borjomi.jpg" alt=""></div>
+</div>
+<!-- Add Navigation Buttons -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<style>
+.swiper-container {
+width: 100%;
+height: 100%;
+}
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: transparent;
+/* Center slide text vertically */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</style>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-     <div class="container">
+  </div>
+</div>
 
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="cards-wrapper">
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="./img/tbilisi.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="./img/batumi.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="./img/batumi.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="./img/borjomi.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                  
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="cards-wrapper">
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="cards-wrapper">
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                <!-- <div class="image-wrapper">
-                  <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
-                </div> -->
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-              <div class="card" style="background-image: url(./img/batumi.jpg); background-size:100% 100% ;">
-                
-                <!-- <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                  <h5 style="direction: rtl;" class="card-title">برنامج سياحي </h5>
-                  <p style="direction: rtl; " class="card-text">8 أيام 7 ليالي </p>
-                 
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Slider 1
+    var slider1 = new Swiper('.slider1', {
+      slidesPerView: 1, // Show only one slide
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.slider1 .swiper-button-next',
+        prevEl: '.slider1 .swiper-button-prev',
+      },
+      autoplay: {
+        delay: 2000,
+      },
+      slideToClickedSlide: true,
+      touch: true,
+      breakpoints: {
+        // When window width is greater than 576px
+        576: {
+          slidesPerView: 4, // Show four slides
+        },
+      },
+    });
+  });
+</script>
 
       
      
@@ -358,6 +369,7 @@
             .card {
               margin: 0 0.5em;
               width: calc(100% / 4);
+              max-height: 348px;
             }
             .cart {
               margin: 0 0.5em;
@@ -440,7 +452,7 @@
                      </p>
                      </div>
                     </div>
-                    <!--.carousel__card-->
+                    
                     <div class="carousel__card " style="position: relative;">
                       <div>
                         <img class="crimage" alt="blog-image-1" src="./img/tbilisi.jpg" />
@@ -454,7 +466,7 @@
                       </div>
                      
                     </div>
-                    <!--.carousel__card-->
+                    
                     <div class="carousel__card " style="position: relative;">
                       <div>
                         <img class="crimage" alt="blog-image-2" src="./img/kutaisi.jpg" />
@@ -468,7 +480,7 @@
                       </div>
                      
                     </div>
-                    <!--.carousel__card-->
+                    
                      <div class="carousel__card " style="position: relative;">
                       <div>
                         <img class="crimage" alt="blog-image-3" src="./img/batumi.jpg" />
@@ -482,7 +494,7 @@
                       </div>
                       
                     </div>
-                    <!--.carousel__card-->
+                    
                     <div class="carousel__card " style="position: relative;">
                       <div>
                         <img class="crimage" alt="blog-image-3" src="./img/batumi.jpg" />
@@ -496,13 +508,13 @@
                       </div>
                       
                     </div>
-                    <!--.carousel__card-->
+                    
                 
                     <div id="next" class="carousel__button--next"></div>
                     <div id="prev" class="carousel__button--prev"></div>
                 
                   </div>
-                  <!--.carousel-->
+                  
                   <div class="carousel__dots">
                     <ul id="dotList">
                       <li class="dot active"></li>
@@ -512,10 +524,10 @@
                       <li class="dot"></li>
                     </ul>
                   </div>
-                  <!--.carousel__dots-->
+                 
                 </div>
                 <div id="show"  class="col-lg-12  ms-4 " >
-                  <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">تصفح باقي المقالات </a>
+                  <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">Browse more articles</a>
     
                 </div>
                 <!--.carousel-wrapper-->
@@ -790,7 +802,7 @@ document.querySelectorAll(".dot").forEach((item, index) => {
            
             </div>
             <div id="hide"  class="col-lg-12  ">
-              <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">تصفح باقي المقالات </a>
+              <a style="height: fit-content; background-color: #2db378; border: none; margin: 20px;" href="#" type="button" class="btn btn-primary ">Browse more articles </a>
 
             </div>
           
@@ -868,6 +880,8 @@ document.querySelectorAll(".dot").forEach((item, index) => {
     .swiper-slide img {
       display: block;
       width: 100%;
+      border-radius: 30px;
+      height: 311px;
     }
   </style>
         </style>
@@ -933,16 +947,16 @@ img {
   </div>
 
 
-  <div class="container mb-3" style="padding-top: 0px;
+  <div id="Feedbacks" class="container mb-3" style="padding-top: 0px;
   padding-bottom: 0px;">
-   <div class="row" style="text-align: left;">
-     <div style="text-align: left;" >
-      <h3 style="max-width: fit-content; margin-right: auto;    color: white;
-      padding: 21px;    padding-left: 157px;
-" id="backageshead">
+   <div  class="row" style="text-align: left;">
+     <div class="col" id="colspans">
+      <span id="spans"   >
         opinions of our customers
-      </h3>
+      </span> 
      </div>
+      
+     
    </div>
  </div>
 
@@ -984,195 +998,44 @@ img {
         .mySwiper-RANDOMID .card {max-width:21rem}
     </style>
 
-    <div class="container py-6"><!-- Slider main container -->
-      <!-- <img src="./img/swipe.gif" style="max-width: 100%  ;" alt=""> -->
-        <div class="swiper mySwiper-RANDOMID">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper"><!-- Slides -->
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div class="card-body">
-                            <div class="lc-block">
-                              <div editable="rich">
-                                <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080"alt="Photo by Marla Gottschalk" loading="lazy">
-                              </div>
-                            </div>
-                            
-                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
- width: 100%;" class="card-body">
-                                <div style="text-align: center;" class="lc-block mb-3">
-                                    <div editable="rich">
-                                        <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-                                        <img src="./img/play.png" style="max-width: 100%; width: 100px; margin: auto;" alt="">
-                                    </div>
-                                </div>
-                               
+   
 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div class="card-body">
-                            <div class="lc-block">
-
-                                <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Jon Tyson" loading="lazy">
-                            </div>
-                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
-                            width: 100%;" class="card-body">
-                                                           <div style="text-align: center;" class="lc-block mb-3">
-                                                               <div editable="rich">
-                                                                <a href="#"><img src="./img/play.png" style="max-width: 100%; width: 100px; margin: auto;" alt=""></a>
-                                                                   <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-                                                                   
-                                                               </div>
-                                                           </div>
-                                                          
-                           
-                           
-                                                       </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div class="card-body">
-                            <div class="lc-block">
-                                <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Vianney CAHEN" loading="lazy">
-                            </div>
-                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
-                            width: 100%;" class="card-body">
-                                                           <div style="text-align: center;" class="lc-block mb-3">
-                                                               <div editable="rich">
-                                                                <a href="#"><img src="./img/play.png" style="max-width: 100%; width: 100px; margin: auto;" alt=""></a>
-                                                                   <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-                                                                   
-                                                               </div>
-                                                           </div>
-                                                          
-                           
-                           
-                                                       </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div class="card-body">
-                            <div class="lc-block">
-                                <img class="img-fluid" src="./img/client.png" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Cherry Lin" loading="lazy">
-                            </div>
-                            <div style="position: absolute;     bottom: 35%;right: 0; color: white; border-radius: 30px; border-top: 0; 
-                            width: 100%;" class="card-body">
-                                                           <div style="text-align: center;" class="lc-block mb-3">
-                                                               <div editable="rich">
-                                                                <a href="#"><img src="./img/play.png" style="max-width: 100%; width: 100px; margin: auto;" alt=""></a>
-                                                                   <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-                                                                   
-                                                               </div>
-                                                           </div>
-                                                          
-                           
-                           
-                                                       </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                            <div class="lc-block">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1594398901592-4f07a2e0b5f1??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8ZnVybml0dXJlJTIwcmVkfGVufDB8Mnx8fDE2OTE0ODcxMjF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Grant Durr" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-
-                                      <img src="./img/play.png" style="max-width: 100%; width: 100px; margin: auto;" alt="">
-
-                                        <!-- <p>Some quick example text to build on the عبد الله الدوسري  and make up the bulk of the card's content..</p> -->
-                                    </div>
-                                </div>
-                                <!-- <div style="text-align: center;" class="lc-block">
-                                    <a class="btn btn-primary" href="#" role="button">Button</a>
-                                </div> -->
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                            <div class="lc-block">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1604309225246-86ad9ff7d79f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTB8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDg3MTIxfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by willy wo" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-                                        <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-                                        <!-- <p>Some quick example text to build on the عبد الله الدوسري  and make up the bulk of the card's content..</p> -->
-                                    </div>
-                                </div>
-                                <!-- <div style="text-align: center;" class="lc-block">
-                                    <a class="btn btn-primary" href="#" role="button">Button</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide h-100">
-                    <div class="cart shadow mx-auto">
-                        <div style="position: absolute; bottom: 0;right: 0; color: white; border-radius: 30px; border-top: 0; background:  linear-gradient(180deg, rgba(44,115,161,0) 0%, rgba(0,0,0,0.5158438375350141) 100%, rgba(4,22,24,1) 100%, rgba(5,19,20,1) 100%);
- width: 100%;" class="card-body">
-                            <div class="lc-block">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1587117238257-8cacadca6ae4?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1587117238257-8cacadca6ae4?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1587117238257-8cacadca6ae4??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8MTd8fGZ1cm5pdHVyZSUyMHJlZHxlbnwwfDJ8fHwxNjkxNDM1MjA3fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Dayana Brooke" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-
-                                        <!-- <h2 style="text-align: center;" class="h5">عبد الله الدوسري </h2> -->
-
-                                        <!-- <p>Some quick example text to build on the عبد الله الدوسري  and make up the bulk of the card's content..</p> -->
-                                    </div>
-                                </div>
-                                <!-- <div style="text-align: center;" class="lc-block">
-                                    <a class="btn btn-primary" href="#" role="button">Button</a>
-                                </div> -->
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination position-relative pt-5 bottom-0"></div>
-        </div>
-    </div>
-
-
+ <div class="container">
+  <div class="row" style="overflow: hidden;">
+    <div class="swiper-container slider2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+        <div class="swiper-slide"><img src="./img/client.png" alt=""></div>
+      </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> 
+  </div>
+</div>
 
     <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 
-
+    <style>
+     
+      @media only screen and (max-width: 600px) {
+        #colspans{
+          text-align: center;
+      }
+}
+    </style>
 
     <div class="container" style="padding-top: 0px;
     padding-bottom: 0px;">
-     <div class="row" style="text-align: right;">
-       <div style="text-align: right;" >
-         <h3 style="max-width: fit-content; margin-left: auto;    color: white;
-         padding: 20px;    padding-left: 250px;
-   " id="backageshead">
+     <div class="row" style="text-align: left; margin-top: 30px; margin-bottom: 30px;">
+       <div class="col" id="colspans"  >
+         <span id="spans" >
            Frequently asked questions
-         </h3>
+         </span>
        </div>
      </div>
    </div>
@@ -1180,18 +1043,32 @@ img {
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
-        <h5 style="padding-top: 18px;
+      <div class="col" style="background-image: url(./img/Icon_4.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: fit-content;
+      margin: auto;
+      color: white;
+      padding: 20px;
+      text-align: right;
+      /* background-image: url(./img/Text_Bar.svg); */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      font-size: 21px;
+      max-width: 100%; text-align: center;">
+        <span style="padding-top: 18px;
     padding-bottom: 21px;
     /* background-size: cover; */
     /* padding: 23px; */
     text-align: center;
     color: #f3f3f2;">
          Support and assistance services
-        </h5>
+        </span>
       </div>
      
-      <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
+      <h4 style="min-height: 236px; background-color: white; border-radius: 30px; padding: 20px; text-align: left;direction: ltr; font-size: large;" id="h3font" >
         We provide our customers with support services around the clock, 7 days a week, to answer all inquiries and assist them in emergency situations.
         <br><br>
         <span id="h3font">
@@ -1202,18 +1079,32 @@ img {
 
     </div>
     <div class="col-lg-4">
-      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
-        <h5 style="padding-top: 18px;
+      <div class="col" style="background-image: url(./img/Icon_4.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: fit-content;
+      margin: auto;
+      color: white;
+      padding: 20px;
+      text-align: right;
+      /* background-image: url(./img/Text_Bar.svg); */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      font-size: 21px;
+      max-width: 100%; text-align: center;">
+        <span style="padding-top: 18px;
     padding-bottom: 21px;
     /* background-size: cover; */
     /* padding: 23px; */
     text-align: center;
     color: #f3f3f2;">
          Tours and activities
-        </h5>
+        </span>
       </div>
      
-      <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
+      <h4 style="min-height: 236px; background-color: white; border-radius: 30px; padding: 20px; text-align: left;direction: ltr; font-size: large;" id="h3font" >
         Organizing local and international tourist tours, including cultural, family, youth, therapeutic, and safari tours.
         <br>
         <br>
@@ -1224,15 +1115,29 @@ img {
       </h4>
     </div>
     <div class="col-lg-4">
-      <div class="col" style="background-image: url(./img/Icon_4.svg); background-size: cover; background-repeat: no-repeat;">
-        <h5 id="h555" style="padding-top: 18px;
+      <div class="col" style="background-image: url(./img/Icon_4.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: fit-content;
+      margin: auto;
+      color: white;
+      padding: 20px;
+      text-align: right;
+      /* background-image: url(./img/Text_Bar.svg); */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      font-size: 21px;
+      max-width: 100%; text-align: center;">
+        <span id="h555" style="padding-top: 18px;
     padding-bottom: 21px;
     /* background-size: cover; */
     /* padding: 23px; */
     text-align: center;
-    color: #f3f3f2;">
+    color: #f3f3f2; font-size: smaller;    white-space: nowrap;">
          Hotel and accommodation reservations
-        </h5>
+        </span>
       </div>
       <style>
         @media only screen and (max-width: 600px) {
@@ -1244,7 +1149,7 @@ img {
 
         }
       </style>
-      <h4 style="background-color: white; border-radius: 30px; padding: 20px; text-align: right;direction: rtl; font-size: large;" id="h3font" >
+      <h4 style="min-height: 236px; background-color: white; border-radius: 30px; padding: 20px; text-align: left;direction: ltr; font-size: large;" id="h3font" >
         We offer a wide range of accommodation options. Including hotels, resorts, cottages, and hotel apartments including breakfast.
         <br><br>
         <span id="h3font">
@@ -1386,7 +1291,7 @@ countIni();
             Register your email
         </h1>
         <h5 style="color: white;">
-            To always receive the latest offers and programmes
+            To always receive the latest offers and programs
         </h5>
         <div class="ms-auto">
           <input type="email" class=" me-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email here" style="max-width: 100%; width: 326px; padding: .375rem .75rem;
@@ -1401,20 +1306,22 @@ countIni();
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
-          border-radius: .375rem;
+          border-radius: .375rem; z-index: 9999; text-align: left;
           transition: border-color .15">
 
         </div>
         <button type="button" class="btn btn-warning"  style="font-weight: 700;background-color: #f1d450;">Submit</button>
-        <img id="emailimg" src="./img/Email.svg" style="" alt="">
+        <img id="emailimg" src="./img/Email - Copy.png" style="" alt="">
       </div>
       <style>
        
         #emailimg{
           position: absolute;
-        width: 650px;
-    bottom: -38%;
-    right: -21%;
+    width: 524px;
+    bottom: -27%;
+    right: -7%;
+    z-index: 1;
+
                   }
                   #emailsection{
                     position: relative; background-color: #2db378; border-radius: 30px; text-align: right; padding-right: 32px; padding: 20px;
@@ -1424,7 +1331,7 @@ countIni();
                   #emailimg{
                     position: absolute;
     width: 205px;
-    bottom: -7%;
+    bottom: -10%;
     right: 0%;
                   }
                   
@@ -1446,13 +1353,13 @@ countIni();
          <h5 style="text-align: left;">
             call us
          </h5>
-         <p style="margin: 0;">
+         <p dir="ltr" style="margin: 0; text-align: right;">
           +995 551522074
          </p>
-         <p style="margin: 0;">
+         <p dir="ltr" style="margin: 0; text-align: right;">
           +995 551522074
          </p>
-         <p style="margin: 0;">
+         <p dir="ltr" style="margin: 0; text-align: right;">
           +995 551522074
          </p>
         </div>
@@ -1631,7 +1538,7 @@ countIni();
                       data-mdb-ripple-init
                       class="btn text-white btn-floating "
                       style=" border-radius: 50%; width: 24px; padding: 0; margin-left: 16px;"
-                      href="#"
+                      href="https://instagram.com/badrtrips"
                       role="button"
                       ><img src="./img/social/instagram__.svg" alt=""></a>
               
@@ -1640,7 +1547,7 @@ countIni();
                       data-mdb-ripple-init
                       class="btn text-white btn-floating "
                       style=" border-radius: 50%; width: 24px; padding: 0; margin-left: 16px;"
-                      href="#"
+                      href="https://www.snapchat.com/add/badrtrips?share_id=PpQ5M04ASu2zs71u1DRoLw&locale=en_GE"
                       role="button"
                       ><img src="./img/social/snapchat__.svg" alt=""></a>
               
@@ -1658,7 +1565,7 @@ countIni();
                       data-mdb-ripple-init
                       class="btn text-white btn-floating "
                       style=" border-radius: 50%; width: 24px; padding: 0; margin-left: 16px;"
-                      href="#"
+                      href="https://www.tiktok.com/@badrtrips"
                       role="button"
                       ><img src="./img/social/Tiktok__.svg" alt=""></a>
                     <!-- Twitter -->
@@ -1666,7 +1573,7 @@ countIni();
                       data-mdb-ripple-init
                       class="btn text-white btn-floating "
                       style=" border-radius: 50%; width: 24px; padding: 0; margin-left: 16px;"
-                      href="#"
+                      href="https://twitter.com/badrtrips"
                       role="button"
                       ><img src="./img/social/Twitter__.svg" alt=""></a>
 
@@ -1675,7 +1582,7 @@ countIni();
                       data-mdb-ripple-init
                       class="btn text-white btn-floating "
                       style=" border-radius: 50%; width: 24px; padding: 0; margin-left: 16px;"
-                      href="#"
+                      href="https://www.youtube.com/channel/UCK8fvStgwawZoT0MgxLqOLw"
                       role="button"
                       ><img src="./img/social/youtube__.svg" alt=""></a>
                   
@@ -1695,7 +1602,7 @@ countIni();
                      </h5> -->
                         </div>
                         <div class="col-6" style="position: relative; padding-right: 6px;">
-                          <a href="#!"><img style="max-width: 100%;position: relative;" src="./img/Youtube_Subscribe.svg" alt="">
+                          <a href="https://www.youtube.com/channel/UCK8fvStgwawZoT0MgxLqOLw"><img style="max-width: 100%;position: relative;" src="./img/Youtube_Subscribe.svg" alt="">
                           </a>
                           <h4 id="socialimg" >
                             Subscribe to the YouTube channel
@@ -1745,7 +1652,7 @@ countIni();
       </footer>
       
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
   
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
