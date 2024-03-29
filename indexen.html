@@ -967,32 +967,11 @@ img {
     <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- lazily load the Swiper JS file -->
-    <script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script>
+    <!-- <script defer="defer" src="https://unpkg.com/swiper@8/swiper-bundle.min.js" onload="initializeSwiperRANDOMID();"></script> -->
 
     <!-- lc-needs-hard-refresh -->
 
-    <script>
-        function initializeSwiperRANDOMID(){
-                const swiper = new Swiper(".mySwiper-RANDOMID", {
-                    slidesPerView: 1,
-                    grabCursor: true,
-                    spaceBetween: 30,
-                    
-                    pagination: {
-                        el: ".swiper-pagination",
-                        dynamicBullets: true,
-                    },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        992: {
-                            slidesPerView: 3,
-                        },
-                    },
-                });
-            }
-    </script>
+  
 
     <style>
         .mySwiper-RANDOMID .card {max-width:21rem}
